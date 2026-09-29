@@ -1,0 +1,12 @@
+numpy
+pandas
+scipy
+scikit-learn
+joblib
+openpyxl
+threadpoolctl
+xgboost
+catboost
+lightgbm
+# Optional cloud model:
+# tabpfn-client
