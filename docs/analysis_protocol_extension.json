@@ -1,0 +1,31 @@
+{
+  "script_version": "2026.09.10.1",
+  "primary_cohort": "all_years_shared",
+  "primary_analysis_status": "locked completed nested-CV OOF results; this extension does not retune base models or thresholds",
+  "secondary_analysis_status": "post-hoc manuscript extension: age/risk/diagnosis subgroup summaries and paired reclassification",
+  "exploratory_analysis_status": "post-hoc exploratory: error structure, XAI, and surrogate-tree fidelity",
+  "sensitivity_analysis_status": "selection sensitivity using the predictor-complete cohort; not external or temporal validation",
+  "confidence_level": 0.95,
+  "single_proportion_ci": "Clopper-Pearson exact",
+  "paired_binary_difference_ci": "Newcombe method 10 score interval for paired proportions",
+  "paired_binary_test": "exact McNemar",
+  "multiplicity": "Benjamini-Hochberg FDR within each pre-defined comparison family",
+  "primary_reporting_guideline": "TRIPOD+AI",
+  "supplementary_reporting_crosschecks": [
+    "STARD-AI (diagnostic-accuracy elements only)",
+    "STROBE (retrospective cohort/data-source elements)",
+    "PROBAST+AI (quality/risk-of-bias/applicability audit; not a reporting checklist)",
+    "FUTURE-AI (fairness/traceability/usability/robustness/explainability/clinical translation)"
+  ],
+  "non_applicable_current_stage": [
+    "DECIDE-AI - reserved for live early-stage clinical evaluation",
+    "SPIRIT-AI/CONSORT-AI - reserved for prospective interventional/randomized studies"
+  ],
+  "controls_first_trimester_confirmed_by_investigator": true,
+  "seed": 42,
+  "bootstrap_reps_requested": 2000,
+  "focus_models": ["extra_trees", "catboost", "logistic_regression", "tabpfn"],
+  "xai_models": ["extra_trees", "catboost"],
+  "surrogate_models": ["extra_trees", "catboost"],
+  "note": "No base estimator is retrained and no OOF threshold is changed by this script."
+}
