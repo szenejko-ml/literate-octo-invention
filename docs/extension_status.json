@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "script_version": "2026.09.10.1",
+  "primary_cohort_n": 13649,
+  "primary_non_euploid_n": 211,
+  "methods": [
+    "CST_fixed",
+    "CST_nested_denom",
+    "CSTplus_fixed",
+    "CSTplus_nested_denom",
+    "logistic_regression",
+    "cart",
+    "random_forest",
+    "extra_trees",
+    "xgboost",
+    "catboost",
+    "lightgbm",
+    "tabpfn"
+  ],
+  "focus_models": ["extra_trees", "catboost", "logistic_regression", "tabpfn"],
+  "xai_completed": true,
+  "surrogates_completed": true,
+  "base_models_retrained": false,
+  "oof_thresholds_changed": false,
+  "output_workbook": "manuscript_extension_results.xlsx"
+}
