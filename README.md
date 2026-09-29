@@ -30,7 +30,7 @@ Predictors are maternal age, CRL, NT representation, FHR, PAPP-A, free beta-hCG,
 - `verify_doctoral_artifact.py` - fresh-interpreter readback test for persisted model bundles.
 - `docs/analysis_protocol_extension.json` - sanitized protocol metadata for the post-hoc manuscript extension.
 - `docs/extension_status.json` - sanitized completion metadata for the additional analysis.
-- `MANUSCRIPT_STRUCTURE.md` - manuscript-oriented organization of the unpublished doctoral analysis.
+- `MANUSCRIPT_STRUCTURE.md` - manuscript-oriented organization of the unpublished doctoral analysis.\n- `RESULTS_OVERVIEW.md` - public-safe aggregate results and disclosure boundary for case-level outputs.
 
 ## Data requirements
 
@@ -77,7 +77,7 @@ The runner records source-code hashes, dependency versions, run signatures, fold
 
 ## Additional manuscript extension
 
-The additional manuscript analysis is documented as a post-hoc extension of the locked nested-CV results. It does not retune the base estimators or alter the locked OOF thresholds. The uploaded materials available for this repository include the protocol/status metadata and manuscript structure; the separate execution script for that extension is not included here, so this repository does not claim full code-level reproducibility of those extension analyses.
+The additional manuscript analysis is documented as a post-hoc extension of the locked nested-CV results. It does not retune the base estimators or alter the locked OOF thresholds. Aggregate results are summarized in `RESULTS_OVERVIEW.md`. The source results workbook also contains participant-level local SHAP rows for false-reassurance cases; those rows are intentionally not published. The separate execution script for the manuscript extension is not included here, so this repository does not claim full code-level reproducibility of the extension analyses.
 
 ## Reporting context
 
